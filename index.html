@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="백엔드 개발자 김원기. Java와 Spring Boot로 Dr.CBT의 예약·회기·결제·환불을 개발하고, 데이터와 로그로 성능을 개선합니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="김원기 | Backend Developer">
+  <meta property="og:description" content="업무의 흐름을 이해하고, 코드로 연결합니다. Dr.CBT 백엔드 개발·운영과 성능 개선 이야기.">
+  <meta property="og:url" content="https://wongi-kim.github.io/">
+  <meta name="theme-color" content="#f7f7f2">
+  <title>김원기 | Backend Developer</title>
+  <link rel="canonical" href="https://wongi-kim.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <div class="page-shell">
+    <aside class="sidebar" aria-label="프로필과 목차">
+      <a class="identity" href="#about" aria-label="김원기 소개로 이동">
+        <span class="monogram" aria-hidden="true">wk<span>.</span></span>
+        <span class="identity-text"><strong>김원기</strong><span>BACKEND DEVELOPER</span></span>
+      </a>
+      <p class="sidebar-note">업무를 이해하고<br>데이터로 확인합니다.</p>
+      <nav class="section-nav" aria-label="페이지 목차">
+        <a href="#about" aria-current="location"><span>01</span> 소개</a>
+        <a href="#impact"><span>02</span> 주요 성과</a>
+        <a href="#experience"><span>03</span> 경력</a>
+        <a href="#projects"><span>04</span> 프로젝트</a>
+        <a href="#stack"><span>05</span> 기술</a>
+        <a href="#approach"><span>06</span> 일하는 방식</a>
+        <a href="#contact"><span>07</span> 더 이야기하기</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-links"><a href="https://github.com/WonGi-Kim">GitHub <span aria-hidden="true">↗</span></a><a href="https://velog.io/@wongi-kim/posts">Velog <span aria-hidden="true">↗</span></a></div>
+        <div class="tools">
+          <button class="theme-button" type="button" aria-label="어두운 화면으로 전환" aria-pressed="false"><span class="theme-icon" aria-hidden="true">◐</span> <span class="theme-label">다크 모드</span></button>
+          <button class="print-button" type="button" aria-label="포트폴리오 인쇄 또는 PDF로 저장">PDF 저장 <span aria-hidden="true">↓</span></button>
+        </div>
+      </div>
+    </aside>
+
+    <main id="main">
+      <section id="about" class="hero" aria-labelledby="hero-title">
+        <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> JAVA · SPRING BOOT <span class="edition">PORTFOLIO / 2026</span></div>
+        <h1 id="hero-title">업무의 흐름을 이해하고,<br><em>코드로 연결합니다.</em></h1>
+        <p class="hero-lead">치료·상담 서비스 <strong>Dr.CBT</strong>의<br class="mobile-break"> 백엔드를 개발하고 운영하는 <strong>김원기</strong>입니다.</p>
+        <p class="hero-description">예약부터 회기, 결제·환불·정산까지 이어지는 업무 규칙을 구현합니다. 복잡한 조건은 명확한 처리 흐름으로 정리하고, 성능 개선은 실제 실행 로그로 확인합니다.</p>
+        <div class="hero-actions"><a class="primary-link" href="#experience">Dr.CBT에서 한 일 <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/WonGi-Kim">GitHub <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-caption"><span>현재</span> 제이엔제이테크 · 백엔드 개발자 <span class="caption-date">2025.04 — 현재</span></div>
+      </section>
+
+      <section id="impact" aria-labelledby="impact-title">
+        <div class="section-heading"><span class="section-number">02 / IMPACT</span><h2 id="impact-title">변경의 결과를 숫자로.</h2></div>
+        <p class="section-intro">배치 조회와 DTO 조립, DB 집계 구조를 개선한 뒤 변경 전후의 실행 로그를 비교했습니다.</p>
+        <div class="metrics">
+          <article class="metric"><span class="metric-label">일반 회원 목록</span><p class="metric-number">73<span>% ↓</span></p><p class="metric-comparison"><span>249ms</span><span aria-hidden="true">→</span><strong>67ms</strong></p><span class="metric-note">평균 처리시간 감소</span></article>
+          <article class="metric"><span class="metric-label">담당 회원 목록</span><p class="metric-number">89<span>% ↓</span></p><p class="metric-comparison"><span>2,220ms</span><span aria-hidden="true">→</span><strong>234ms</strong></p><span class="metric-note">평균 처리시간 감소</span></article>
+          <article class="metric"><span class="metric-label">판매 상세 조회</span><p class="metric-number">92<span>% ↓</span></p><p class="metric-result">DB 조회 구조 개선</p><span class="metric-note">처리시간 감소</span></article>
+        </div>
+        <p class="impact-footnote">예약 회원 선택 조회 <strong>약 86%</strong> · 상품 상세 조회 <strong>약 85%</strong> 감소</p>
+        <details class="measurement-note"><summary>어떻게 비교했나요?<span aria-hidden="true">+</span></summary><div><p>회원 목록은 같은 API·사용자·요청 조건의 성공 로그를 묶고, 실제 변경 반영 시점을 기준으로 평균 처리시간을 비교했습니다. 배치 조회와 Map 기반 DTO 조립 등 조회 구조 변경 이후의 결과이며, 위 수치는 반올림한 값입니다.</p><p>다른 조회 API도 각 변경 전후의 실행 로그로 처리시간 감소를 확인했습니다.</p></div></details>
+      </section>
+
+      <section id="experience" aria-labelledby="experience-title">
+        <div class="section-heading"><span class="section-number">03 / EXPERIENCE</span><h2 id="experience-title">하나의 기능에서, 전체 흐름까지.</h2></div>
+        <article class="work">
+          <div class="work-heading"><div><p class="company">제이엔제이테크</p><h3>Dr.CBT <span>치료·상담 운영 SaaS</span></h3></div><span class="date">2025.04 — 현재</span></div>
+          <p class="role">백엔드 1인 담당 · 설계 / 개발 / 운영</p>
+          <p>예약·회기·워크북과 결제·환불·정산, 척도 검사, 관리자 API를 담당합니다. 상품 유형과 진행 상태에 따라 달라지는 정책을 구현하고, 실제 운영에서 발견한 조회 지연과 예외 처리 문제를 개선합니다.</p>
+          <div class="tags" aria-label="Dr.CBT 기술"><span>Java 17</span><span>Spring Boot</span><span>JPA · QueryDSL</span><span>MySQL</span><span>NCP</span></div>
+          <a class="text-link service-link" href="https://yd-icbt.co.kr">서비스 보기 <span aria-hidden="true">↗</span></a>
+
+          <div class="case-list">
+            <details class="case" open>
+              <summary><span class="case-number">01</span><span class="case-title">회원마다 반복하던 조회를, 한 번에 모아서.<small>배치 조회 · ID 기반 Map · DTO 조립</small></span><span class="expand" aria-hidden="true">+</span></summary>
+              <div class="case-body">
+                <div class="case-paragraph"><h4>문제</h4><p>회원 목록을 만드는 동안 지점·등록 프로그램·회기·담당 치료사를 반복 조회했습니다. DTO를 조립하는 단계까지 데이터 접근이 이어져, 목록을 조회하는 비용이 커졌습니다.</p></div>
+                <div class="case-paragraph"><h4>선택</h4><p>현재 페이지의 회원 ID를 모아 연관 정보를 배치 조회했습니다. ID를 키로 하는 HashMap과 그룹 Map으로 데이터를 연결하고, 순회 순서를 유지해야 하는 곳은 LinkedHashMap을 사용했습니다. DTO에는 이미 조회한 데이터를 전달하도록 바꿨습니다.</p></div>
+                <div class="result-line"><span>결과</span><p>일반 회원 <strong>249 → 67ms</strong><br>담당 회원 <strong>2,220 → 234ms</strong></p></div>
+              </div>
+            </details>
+            <details class="case">
+              <summary><span class="case-number">02</span><span class="case-title">결제 채널은 연결하고, 환불 조건은 명확하게.<small>NICEPAY · 사용량 기반 환불 · 결제권 이력</small></span><span class="expand" aria-hidden="true">+</span></summary>
+              <div class="case-body">
+                <div class="case-paragraph"><h4>문제</h4><p>온라인·링크·단말 결제는 응답 형식이 다릅니다. 환불은 회기 진행량, 피드백, 대면 여부와 쿠폰 사용에 따라 계산 기준이 달라지고, 환불 이후의 이용 권한에도 영향을 줍니다.</p></div>
+                <div class="case-paragraph"><h4>선택</h4><p>여러 결제 채널을 내부 결제 모델로 연결하고, 채널별 상세 데이터는 JSON으로 관리했습니다. 실결제·쿠폰 금액을 상품 기준에 따라 안분하고, 일반·연장 결제권 이력과 사용량 기반 환불 계산을 연결했습니다.</p></div>
+                <div class="case-paragraph"><h4>결과</h4><p>승인·취소와 예상 환불 금액 조회, 환불 후 남은 결제권과 이용 권한을 함께 처리하는 흐름을 구현했습니다. 정산은 MySQL JSON 함수와 Native Query로 DB에서 추출·집계하도록 구성했습니다.</p></div>
+              </div>
+            </details>
+            <details class="case">
+              <summary><span class="case-number">03</span><span class="case-title">예약이 바뀌어도, 회기의 연결은 이어지도록.<small>Session Shifting · 트랜잭션 · 중복 제출 방어</small></span><span class="expand" aria-hidden="true">+</span></summary>
+              <div class="case-body">
+                <div class="case-paragraph"><h4>문제</h4><p>예약 취소는 이후 회기의 순서와 예약 매핑에도 영향을 줍니다. 워크북 제출이 동시에 들어오면 최초 제출에 따른 후처리와 알림이 중복 실행될 수 있었습니다.</p></div>
+                <div class="case-paragraph"><h4>선택</h4><p>예약 취소 시 이후 회기와 예약의 연결을 재구성하는 Session Shifting을 구현하고, 관련 데이터를 한 트랜잭션에서 갱신했습니다. 워크북 제출에는 DB 행 잠금과 기존 완료 상태 확인을 적용했습니다.</p></div>
+                <div class="case-paragraph"><h4>결과</h4><p>회기 재배치를 자동화하고, 최초 제출 여부에 따라 완료 처리와 알림 발송을 분기해 중복 처리를 방어했습니다.</p></div>
+              </div>
+            </details>
+            <details class="case">
+              <summary><span class="case-number">04</span><span class="case-title">파일과 데이터의 변경 순서까지 설계하기.<small>Presigned URL · 커밋 후 정리 · 공통 로깅</small></span><span class="expand" aria-hidden="true">+</span></summary>
+              <div class="case-body">
+                <div class="case-paragraph"><h4>파일</h4><p>NCP Object Storage와 Presigned URL로 직접 업로드를 구현했습니다. 파일 교체 시 DB 커밋 이후 기존 객체를 삭제하도록 순서를 정리해, DB 변경 실패에도 기존 파일을 유지할 수 있도록 했습니다.</p></div>
+                <div class="case-paragraph"><h4>운영</h4><p>Spring AOP로 Service·Repository 실행시간과 예외를 공통 기록했습니다. 익명 사용자 처리에서 발생하던 불필요한 오류와 중복 로그를 줄이고, 서버 오류의 추적 정보는 유지했습니다.</p></div>
+                <div class="case-paragraph"><h4>검증</h4><p>척도 검사 8종의 응답 인덱스·점수 변환과 입력 검증을 정리했습니다. 인증·로그 변경은 JUnit, Mockito, MockMvc로 회귀 검증했습니다.</p></div>
+              </div>
+            </details>
+          </div>
+        </article>
+        <article class="work previous-work">
+          <div class="work-heading"><div><p class="company">킨도프</p><h3>패션 업무 자동화</h3></div><span class="date">2024.10 — 2024.12</span></div>
+          <p class="role">웹 개발 인턴</p>
+          <p>MD의 OrderSheet·LineSheet 작성 업무를 분석하고, MERN 기반 프론트엔드·백엔드 연동과 직책별 컬럼 마스킹을 설계했습니다. 현업 담당자·디자이너와 구현 범위를 조율했습니다.</p>
+          <p class="muted-note">인턴 기간 중 서비스는 출시되지 않았습니다.</p>
+        </article>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-title">
+        <div class="section-heading"><span class="section-number">04 / PROJECTS</span><h2 id="projects-title">함께 만들며 넓힌 경험.</h2></div>
+        <article class="project">
+          <div class="project-heading"><span class="project-index">01</span><div><h3>Hot Item Collector</h3><p>2024.07 — 2024.08 · 4인 프로젝트</p></div><a href="https://github.com/WonGi-Kim/hot-item-collector" aria-label="Hot Item Collector GitHub 저장소" class="project-link">GitHub <span aria-hidden="true">↗</span></a></div>
+          <p>인기 아이템을 소개하고 거래하는 소셜 커머스. 결제와 실시간 채팅을 맡았습니다.</p>
+          <ul class="project-list"><li>포트원 API로 결제 요청·검증·결과 처리를 구현하고 Vue 화면과 연동</li><li>WebSocket·STOMP·RabbitMQ 기반 채팅과 MongoDB 메시지 저장 구현</li><li>ChannelInterceptor에서 JWT 인증 정보를 연결해 인증 컨텍스트 불일치 해결</li></ul>
+          <div class="tags"><span>Spring Boot</span><span>MySQL · MongoDB</span><span>WebSocket · RabbitMQ</span><span>Vue</span></div>
+        </article>
+        <article class="project">
+          <div class="project-heading"><span class="project-index">02</span><div><h3>PlayUs</h3><p>2025.01 · 두핸즈 × 블레이버스 공모전 · 6인 프로젝트</p></div><a href="https://github.com/WonGi-Kim/playus-backend" aria-label="PlayUs GitHub 저장소" class="project-link">GitHub <span aria-hidden="true">↗</span></a></div>
+          <p>사내 활동을 경험치로 기록하는 앱 서비스. 기존 시트와 서비스 데이터를 연결했습니다.</p>
+          <ul class="project-list"><li>Google Sheets API로 기존 시트와 서비스 DB의 데이터 연동·동기화</li><li>MongoDB 하위 문서로 계정 정보, 활동 내역과 연도별 경험치 포인트 모델링</li></ul>
+          <div class="tags"><span>Spring Boot</span><span>MongoDB</span><span>Google Sheets API</span></div>
+        </article>
+      </section>
+
+      <section id="stack" aria-labelledby="stack-title">
+        <div class="section-heading"><span class="section-number">05 / TOOLKIT</span><h2 id="stack-title">문제에 맞춰 선택하는 도구.</h2></div>
+        <dl class="stack-list">
+          <div><dt>Backend</dt><dd><strong>Java · Spring Boot</strong><span>Spring Data JPA · QueryDSL · Spring Security · JWT</span></dd></div>
+          <div><dt>Data</dt><dd><strong>MySQL · MongoDB</strong><span>MySQL JSON · Native Query · 배치 조회 · DB 집계</span></dd></div>
+          <div><dt>Integration</dt><dd><strong>NICEPAY · NCP Object Storage</strong><span>Presigned URL · WebSocket · STOMP · RabbitMQ · Google Sheets API</span></dd></div>
+          <div><dt>Quality &amp; Ops</dt><dd><strong>JUnit · Mockito · MockMvc</strong><span>Spring AOP · GitHub Actions · 성능 로그 분석 · 기능 문서화</span></dd></div>
+        </dl>
+      </section>
+
+      <section id="approach" aria-labelledby="approach-title">
+        <div class="section-heading"><span class="section-number">06 / APPROACH</span><h2 id="approach-title">코드 앞뒤의 맥락을 살핍니다.</h2></div>
+        <div class="approach-list">
+          <article><span>01</span><div><h3>조건을 먼저 정리합니다.</h3><p>환불 금액을 계산하기 전에 회기·피드백·쿠폰이 어떤 순서로 영향을 주는지 확인합니다. 업무 규칙이 변경되면 확인할 데이터와 로직을 찾을 수 있도록 구성합니다.</p></div></article>
+          <article><span>02</span><div><h3>변경한 뒤에는 측정합니다.</h3><p>느린 조회를 배치와 Map 조립으로 바꾼 뒤, 요청 조건과 실제 반영 시점을 맞춰 로그를 비교했습니다. 기능 구현과 결과 확인을 하나의 작업으로 봅니다.</p></div></article>
+          <article><span>03</span><div><h3>다음 사람이 이해할 수 있게 남깁니다.</h3><p>처리 흐름과 예외 조건, ERD와 파일 업로드 가이드를 문서로 남깁니다. 프로젝트에서 겪은 역할 분담의 혼선을 통해 책임과 데이터 전달 시점을 분명히 하는 중요성을 배웠습니다.</p></div></article>
+        </div>
+        <div class="education"><h3>학습의 기반</h3><p>한서대학교 컴퓨터공학과 졸업</p><p>내일배움캠프 Java Spring 트랙 수료 <span>2024.04 — 2024.08</span></p><p>리눅스마스터 2급 <span>2018.06</span></p></div>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="section-heading"><span class="section-number">07 / CONNECT</span><h2 id="contact-title">더 이야기해 보고 싶다면.</h2></div>
+        <p>만들어 온 프로젝트는 GitHub에,<br>학습과 고민의 기록은 블로그에 남기고 있습니다.</p>
+        <div class="contact-links"><a href="https://github.com/WonGi-Kim"><span>GitHub</span><strong>WonGi-Kim</strong><span aria-hidden="true">↗</span></a><a href="https://velog.io/@wongi-kim/posts"><span>Blog</span><strong>개발 기록 읽기</strong><span aria-hidden="true">↗</span></a></div>
+      </section>
+      <footer><span>© 2026 김원기</span><a href="#about">처음으로 <span aria-hidden="true">↑</span></a></footer>
+    </main>
+  </div>
+</body>
+</html>
