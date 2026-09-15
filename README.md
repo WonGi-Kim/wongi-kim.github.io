@@ -1,6 +1,6 @@
 # 김원기 · Backend Developer
 
-[포트폴리오](https://wongi-kim.github.io/) · [GitHub](https://github.com/WonGi-Kim) · [기술 블로그](https://velog.io/@wongi-kim/posts)
+[포트폴리오](https://wongi-kim.github.io/) · [GitHub](https://github.com/WonGi-Kim) · [기술 블로그](https://velog.io/@wongi-kim/posts) · [상세 포트폴리오 (Notion)](https://ten-tornado-b09.notion.site/18067a27ac7e4f4790dde645fb3bf3d3)
 
 Dr.CBT의 백엔드 개발·운영 경험과 프로젝트를 정리한 개인 포트폴리오입니다.
 
